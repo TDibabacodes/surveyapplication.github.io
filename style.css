@@ -1,0 +1,98 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+#menu {
+  text-align: center;
+}
+
+button {
+  margin: 10px;
+}
+
+form fieldset {
+  margin-bottom: 20px;
+}
+
+form div {
+  margin: 10px 0;
+}
+
+form label {
+  display: inline-block;
+  width: 150px;
+}
+
+form input[type="text"],
+form input[type="date"],
+form input[type="number"],
+form input[type="checkbox"],
+form input[type="radio"] {
+  width: 200px;
+}
+
+#screen3 p {
+  margin: 5px 0;
+}
+
+#screen3 button {
+  margin-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+#menu {
+  text-align: center;
+}
+
+button {
+  margin: 10px;
+}
+
+form fieldset {
+  margin-bottom: 20px;
+}
+
+form div {
+  margin: 10px 0;
+}
+
+form label {
+  display: inline-block;
+  width: 150px;
+}
+
+form input[type="text"],
+form input[type="date"],
+form input[type="number"],
+form input[type="checkbox"],
+form input[type="radio"] {
+  width: 200px;
+}
+
+#screen3 p {
+  margin: 5px 0;
+}
+
+#screen3 button {
+  margin-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

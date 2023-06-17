@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey App</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <h1>Survey App</h1>
+    <div id="menu">
+      <button onclick="fillOutSurvey()">Fill out survey</button>
+      <button onclick="viewSurveyResults()">View survey results</button>
+    </div>
+
+    <div id="screen2" style="display: none">
+      <h2>Take our Survey</h2>
+      <form id="surveyForm" onsubmit="submitSurvey(event)">
+        <fieldset>
+          <legend>Personal Details</legend>
+          <div>
+            <label for="surname">Surname:</label>
+            <input type="text" id="surname" required />
+          </div>
+          <div>
+            <label for="firstNames">First Names:</label>
+            <input type="text" id="firstNames" required />
+          </div>
+          <div>
+            <label for="contactNumber">Contact number:</label>
+            <input type="text" id="contactNumber" required />
+          </div>
+          <div>
+            <label for="date">Date:</label>
+            <input type="date" id="date" required />
+          </div>
+          <div>
+            <label for="age">Age:</label>
+            <input type="number" id="age" required />
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>What is your favorite food?</legend>
+          <div>
+            <input type="checkbox" id="pizza" value="Pizza" />
+            <label for="pizza">Pizza</label>
+          </div>
+          <div>
+            <input type="checkbox" id="pasta" value="Pasta" />
+            <label for="pasta">Pasta</label>
+          </div>
+          <div>
+            <input type="checkbox" id="papWors" value="Pap and Wors" />
+            <label for="papWors">Pap and Wors</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              id="chickenStirFry"
+              value="Chicken stir fry"
+            />
+            <label for="chickenStirFry">Chicken stir fry</label>
+          </div>
+          <div>
+            <input type="checkbox" id="beefStirFry" value="Beef stir fry" />
+            <label for="beefStirFry">Beef stir fry</label>
+          </div>
+          <div>
+            <input type="checkbox" id="other" value="Other" />
+            <label for="other">Other</label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>
+            On a scale of 1 to 5, indicate whether you strongly agree to
+            strongly disagree:
+          </legend>
+          <div>
+            <label>I like to eat out:</label>
+            <input type="radio" name="eatOut" value="1" required /> 1
+            <input type="radio" name="eatOut" value="2" /> 2
+            <input type="radio" name="eatOut" value="3" /> 3
+            <input type="radio" name="eatOut" value="4" /> 4
+            <input type="radio" name="eatOut" value="5" /> 5
+          </div>
+          <div>
+            <label>I like to watch movies:</label>
+            <input type="radio" name="watchMovies" value="1" required /> 1
+            <input type="radio" name="watchMovies" value="2" /> 2
+            <input type="radio" name="watchMovies" value="3" /> 3
+            <input type="radio" name="watchMovies" value="4" /> 4
+            <input type="radio" name="watchMovies" value="5" /> 5
+          </div>
+          <div>
+            <label>I like to watch TV:</label>
+            <input type="radio" name="watchTV" value="1" required /> 1
+            <input type="radio" name="watchTV" value="2" /> 2
+            <input type="radio" name="watchTV" value="3" /> 3
+            <input type="radio" name="watchTV" value="4" /> 4
+            <input type="radio" name="watchTV" value="5" /> 5
+          </div>
+          <div>
+            <label>I like to listen to the radio:</label>
+            <input type="radio" name="listenRadio" value="1" required /> 1
+            <input type="radio" name="listenRadio" value="2" /> 2
+            <input type="radio" name="listenRadio" value="3" /> 3
+            <input type="radio" name="listenRadio" value="4" /> 4
+            <input type="radio" name="listenRadio" value="5" /> 5
+          </div>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <div id="screen3" style="display: none">
+      <h2>Survey Results</h2>
+      <p>Total number of surveys: <span id="totalSurveys"></span></p>
+      <p>Average age: <span id="averageAge"></span></p>
+      <p>
+        Oldest person who participated in the survey:
+        <span id="oldestPerson"></span>
+      </p>
+      <p>
+        Youngest person who participated in the survey:
+        <span id="youngestPerson"></span>
+      </p>
+      <p>
+        Percentage of people who like Pizza: <span id="pizzaPercentage"></span>%
+      </p>
+      <p>
+        Percentage of people who like Pasta: <span id="pastaPercentage"></span>%
+      </p>
+      <p>
+        Percentage of people who like Pap and Wors:
+        <span id="papWorsPercentage"></span>%
+      </p>
+      <p>People like to eat out: <span id="eatOutRating"></span></p>
+      <p>People like to watch movies: <span id="watchMoviesRating"></span></p>
+      <p>People like to watch TV: <span id="watchTVRating"></span></p>
+      <p>
+        People like to listen to the radio: <span id="listenRadioRating"></span>
+      </p>
+      <button onclick="backToMenu()">OK</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
